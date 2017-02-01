@@ -44,11 +44,12 @@ namespace JogoDesktop
             {
                 MessageBox.Show("Você deve informar seu nome", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtNome.Focus();
-            }else{
+            }
+            else {
 
                 //início do código para inserir o jogador na tabela
                 //using System.Data.SqlClient;
-                using (SqlConnection conexao = new SqlConnection("Server=AME0556356W10-1\\ALUNO01;Database=db_PerguntasERespostas;Trusted_Connection=Yes"))
+                using (SqlConnection conexao = new SqlConnection("Server=AME0556315W10-1\\SQLEXPRESS;Database=db_PerguntasERespostas;Trusted_Connection=Yes"))
                 {
                     using(SqlCommand comando = new SqlCommand("insert into tb_jogador(nome) values(@NOME)",conexao))
                     {
@@ -62,6 +63,8 @@ namespace JogoDesktop
                             System.Media.SoundPlayer player = new System.Media.SoundPlayer();
                             player.SoundLocation = "c:\\vm\\teste\\som.wav";
                             player.Play();
+                            Pergunta1 p1 = new Pergunta1();
+                            p1.ShowDialog();
 
                         }
                         else
