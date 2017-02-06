@@ -35,3 +35,8 @@ delete from tb_Jogador
 
 --Limpa os dados da tabela e reinicia o id.
 truncate table tb_Jogador
+
+select * from tb_Jogador join tb_Perguntas on tb_Jogador.id = tb_Perguntas.id_Jogador
+
+--Seleciona o ultimo id cadastrado
+select @@IDENTITY
