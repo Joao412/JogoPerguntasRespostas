@@ -22,7 +22,7 @@ namespace JogoDesktop
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (rdbResposta1.Checked == true)
+            if (rdbResposta2.Checked == true)
             {
                 MessageBox.Show("Você acertou!!!");
             }

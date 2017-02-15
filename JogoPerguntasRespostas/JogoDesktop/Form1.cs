@@ -18,6 +18,7 @@ namespace JogoDesktop
             InitializeComponent();
         }
 
+        //Campo do nome
         private void txtNome_Enter(object sender, EventArgs e)
         {
             txtNome.Text = "";
@@ -33,6 +34,41 @@ namespace JogoDesktop
 
         }
 
+        //Campo do sobrenome
+        private void txtNome2_Enter(object sender, EventArgs e)
+        {
+            txtNome2.Text = "";
+        }
+
+        private void txtNome2_Leave(object sender, EventArgs e)
+        {
+
+            if (txtNome2.Text == "")
+            {
+                txtNome2.Text = "Digite seu sobrenome";
+            }
+
+        }
+
+
+        //Campo do e-mail
+
+        private void txtNome3_Enter(object sender, EventArgs e)
+        {
+            txtNome3.Text = "";
+        }
+
+        private void txtNome3_Leave(object sender, EventArgs e)
+        {
+
+            if (txtNome3.Text == "")
+            {
+                txtNome3.Text = "Digite seu sobrenome";
+            }
+
+        }
+
+
         private void frmInicial_Load(object sender, EventArgs e)
         {
            
@@ -45,6 +81,20 @@ namespace JogoDesktop
                 MessageBox.Show("Você deve informar seu nome", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtNome.Focus();
             }
+
+            if (txtNome2.Text == "Digite seu sobrenome")
+            {
+                MessageBox.Show("Você deve informar seu sobrenome", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtNome.Focus();
+            }
+
+
+            if (txtNome3.Text == "Digite seu E-mail")
+            {
+                MessageBox.Show("Você deve informar seu E-mail", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtNome.Focus();
+            }
+
             else {
 
                 //início do código para inserir o jogador na tabela
@@ -68,10 +118,13 @@ namespace JogoDesktop
 
                             MessageBox.Show("Olá " + txtNome.Text.ToUpper() + ". Você está pronto para continuar!!!", "PLAYYYY", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
-                            System.Media.SoundPlayer player = new System.Media.SoundPlayer();
-                            player.SoundLocation = "c:\\vm\\teste\\som.wav";
-                            player.Play();
+                            // System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                            // player.SoundLocation = "c:\\vm\\teste\\som.wav";
+                            // player.Play();
 
+
+                            TelaDeInstrucoes t1 = new TelaDeInstrucoes(txtNome.Text);
+                            t1.ShowDialog();
 
                             Pergunta1 p1 = new Pergunta1(id_Jogador);
                             p1.ShowDialog();
@@ -85,6 +138,18 @@ namespace JogoDesktop
                             Pergunta4 p4 = new Pergunta4(id_Jogador);
                             p4.ShowDialog();
 
+
+
+
+                            //Pega a quantidade de acertos
+
+                            comando.CommandText = "select COUNT(pergunta) from tb_Perguntas where id_Jogador =" + id_Jogador;
+                            SqlDataReader dr_acertos = comando.ExecuteReader();
+                            dr_acertos.Read();
+                            MessageBox.Show("Sua quantidade de acertos é: " + dr_acertos.GetInt32(0));
+                            dr_acertos.Close();
+
+                           
                         }
 
                         else
@@ -95,6 +160,11 @@ namespace JogoDesktop
                 }
                 //fim do código para inserir o jogador na tabela
             }
+        }
+
+        private void txtNome_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

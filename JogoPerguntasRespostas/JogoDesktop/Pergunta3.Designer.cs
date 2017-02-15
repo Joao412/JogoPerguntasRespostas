@@ -50,59 +50,63 @@
             // rdbResposta4
             // 
             this.rdbResposta4.AutoSize = true;
+            this.rdbResposta4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbResposta4.Location = new System.Drawing.Point(80, 265);
             this.rdbResposta4.Name = "rdbResposta4";
-            this.rdbResposta4.Size = new System.Drawing.Size(279, 17);
+            this.rdbResposta4.Size = new System.Drawing.Size(76, 21);
             this.rdbResposta4.TabIndex = 15;
             this.rdbResposta4.TabStop = true;
-            this.rdbResposta4.Text = "O existir invalida qualquer argumento sobre a Verdade";
+            this.rdbResposta4.Text = "Scatha";
             this.rdbResposta4.UseVisualStyleBackColor = true;
             // 
             // rdbResposta3
             // 
             this.rdbResposta3.AutoSize = true;
+            this.rdbResposta3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbResposta3.Location = new System.Drawing.Point(80, 207);
             this.rdbResposta3.Name = "rdbResposta3";
-            this.rdbResposta3.Size = new System.Drawing.Size(129, 17);
+            this.rdbResposta3.Size = new System.Drawing.Size(179, 21);
             this.rdbResposta3.TabIndex = 14;
             this.rdbResposta3.TabStop = true;
-            this.rdbResposta3.Text = "A Verdade é subjetiva";
+            this.rdbResposta3.Text = "Ancalagon The Black";
             this.rdbResposta3.UseVisualStyleBackColor = true;
             // 
             // rdbResposta2
             // 
             this.rdbResposta2.AutoSize = true;
+            this.rdbResposta2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbResposta2.Location = new System.Drawing.Point(80, 152);
             this.rdbResposta2.Name = "rdbResposta2";
-            this.rdbResposta2.Size = new System.Drawing.Size(261, 17);
+            this.rdbResposta2.Size = new System.Drawing.Size(93, 21);
             this.rdbResposta2.TabIndex = 13;
             this.rdbResposta2.TabStop = true;
-            this.rdbResposta2.Text = "A Verdade é irreal assim como a própria existência";
+            this.rdbResposta2.Text = "Glaurung";
             this.rdbResposta2.UseVisualStyleBackColor = true;
             // 
             // rdbResposta1
             // 
             this.rdbResposta1.AutoSize = true;
             this.rdbResposta1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rdbResposta1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbResposta1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.rdbResposta1.Location = new System.Drawing.Point(80, 99);
             this.rdbResposta1.Name = "rdbResposta1";
-            this.rdbResposta1.Size = new System.Drawing.Size(160, 17);
+            this.rdbResposta1.Size = new System.Drawing.Size(75, 21);
             this.rdbResposta1.TabIndex = 12;
             this.rdbResposta1.TabStop = true;
-            this.rdbResposta1.Text = "A Verdade é imutável e Real";
+            this.rdbResposta1.Text = "Smaug";
             this.rdbResposta1.UseVisualStyleBackColor = false;
             // 
             // lblPergunta
             // 
             this.lblPergunta.AutoSize = true;
-            this.lblPergunta.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPergunta.ForeColor = System.Drawing.Color.Red;
-            this.lblPergunta.Location = new System.Drawing.Point(42, 24);
+            this.lblPergunta.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPergunta.ForeColor = System.Drawing.Color.Black;
+            this.lblPergunta.Location = new System.Drawing.Point(34, 26);
             this.lblPergunta.Name = "lblPergunta";
-            this.lblPergunta.Size = new System.Drawing.Size(529, 17);
+            this.lblPergunta.Size = new System.Drawing.Size(552, 25);
             this.lblPergunta.TabIndex = 11;
-            this.lblPergunta.Text = "Qual é a fundamentalização da Verdade para a filosofia Pós-Socrática?";
+            this.lblPergunta.Text = "Qual o maior Dragão do Universo do Senhor dos Aneis?";
             // 
             // Pergunta3
             // 
